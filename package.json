@@ -1,0 +1,13 @@
+{
+  "name": "dayoff-api",
+  "version": "1.0.0",
+  "description": "API untuk mengecek hari libur Indonesia 2025",
+  "main": "api/index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "start": "vercel dev"
+  },
+  "keywords": ["api", "holidays", "indonesia", "2025"],
+  "author": "Bruen",
+  "license": "MIT"
+}
