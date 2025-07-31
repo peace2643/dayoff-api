@@ -1,6 +1,8 @@
 {
   "name": "dayoff-api",
   "version": "1.0.0",
+  "engines": {
+    "node": "20.x"
   "description": "API untuk mengecek hari libur Indonesia 2025",
   "main": "api/index.js",
   "scripts": {
