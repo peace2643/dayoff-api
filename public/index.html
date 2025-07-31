@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dayoff API - Hari Libur Indonesia 2025</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <div class="max-w-3xl mx-auto my-10 p-8 bg-white rounded-lg shadow-md">
+    <div class="text-center mb-8">
+      <h1 class="text-4xl font-extrabold text-indigo-600 mb-2">
+        <i class="fas fa-calendar-day"></i> Dayoff API
+      </h1>
+      <p class="text-gray-600 text-lg">API untuk mengecek Hari Libur & Cuti Bersama Indonesia 2025</p>
+    </div>
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-bold text-indigo-500 mb-2">📦 Format Response</h2>
+      <pre class="bg-gray-100 p-4 rounded-lg text-sm overflow-x-auto">
+{
+  "tanggal": "2025-01-01",
+  "keterangan": "Tahun Baru 2025",
+  "is_cuti": true
+}
+      </pre>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-bold text-indigo-500 mb-2">🚀 Cara Akses API</h2>
+      <ul class="list-disc list-inside space-y-2 text-gray-700 text-sm">
+        <li>
+          Semua hari libur tahun berjalan:
+          <code class="bg-gray-200 px-2 py-1 rounded">/api</code>
+        </li>
+        <li>
+          Hari libur tahun tertentu (contoh: 2025):
+          <code class="bg-gray-200 px-2 py-1 rounded">/api?year=2025</code>
+        </li>
+        <li>
+          Hari libur bulan tertentu:
+          <code class="bg-gray-200 px-2 py-1 rounded">/api?month=5</code>
+        </li>
+        <li>
+          Hari libur bulan & tahun tertentu:
+          <code class="bg-gray-200 px-2 py-1 rounded">/api?year=2025&month=5</code>
+        </li>
+      </ul>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-bold text-indigo-500 mb-2">⚙️ Cara Kerja</h2>
+      <p class="text-gray-700 text-sm">
+        API ini menggunakan data resmi hari libur Indonesia dan memperbarui data secara berkala.
+        Proyek ini dibuat untuk mempermudah developer, pelaku bisnis, dan publik dalam mengakses informasi hari libur nasional.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold text-indigo-500 mb-2">Cara Kerja API ini?</h2>
+      <p class="text-gray-700 text-sm">
+       API ini mengambil data dari <a href="https://www.tanggalans.id/" class="text-blue-500 underline">tanggalans.id</a> dengan cara di scraping setiap 1 bulan sekali menggunakan github action.
+      </p>
+    </section>
+
+    <footer class="mt-10 text-center text-xs text-gray-400">
+      &copy; 2025 Dayoff API — Dibuat dengan ❤️ untuk Indonesia.
+    </footer>
+  </div>
+</body>
+</html>
 
