@@ -1,7 +1,6 @@
 {
   "name": "dayoff-api",
   "version": "1.0.0",
-  
   "description": "API untuk mengecek hari libur Indonesia 2025",
   "main": "api/index.js",
   "scripts": {
@@ -10,5 +9,8 @@
   },
   "keywords": ["api", "holidays", "indonesia", "2025"],
   "author": "Bruen",
-  "license": "MIT"
+  "license": "MIT",
+  "engines": {
+    "node": "20.x"
+  }
 }
